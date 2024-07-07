@@ -64,6 +64,7 @@ main {
   display: flex;
   justify-content: center;
   margin: var(--side-margin);
+  padding-bottom: 20px;
 }
 
 .main-pt1 {
@@ -110,7 +111,17 @@ main {
   background-position: center;
 }
 
+.external-section-one {
+  margin: var(--side-margin);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section-one {
+  height: auto;
+  width: 1100px;
+  border-radius: 10px;
   margin: var(--side-margin);
   -webkit-box-shadow: 0px 8px 15px -8px rgba(87,87,87,1);
   -moz-box-shadow: 0px 8px 15px -8px rgba(87,87,87,1);
@@ -155,6 +166,8 @@ main {
   display: flex;
   margin: var(--side-margin);
   justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .section-two-img {
@@ -171,9 +184,7 @@ main {
   justify-content: center;
   align-items: flex-start;
 
-  padding: 55px 0px 0px 0px; /* top, right, bottom, left */
-
-  background-color: yellow;
+  padding: 0px 0px 0px 0px; /* top, right, bottom, left */
 }
 
 .section-two-description p{
@@ -202,29 +213,53 @@ main {
 .section-three {
   margin: var(--side-margin);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-
+  position: relative;
   
 }
 
 .section-three-card {
   height: 600px;
-  width: 300px;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   border: 2px solid var(--text-color);
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 25px 25px 50px 25px;
 }
 
 .section-three-card:hover {
   border: 2px solid var(--primary-color);
-  border-radius: 5px;
 }
+
+.section-three-card-titulo-button {
+  display: flex;
+  position: absolute;
+  padding: 460px 0px 0px 0px; /* top, right, bottom, left*/
+}
+
+.section-three-card-titulo-button h1{
+  color: var(--title-color);
+
+}
+
+.section-three-card-titulo-button h1 span{
+  color: var(--text-color);
+  
+}
+
+.section-three-card-titulo-button {
+  display: flex;
+  
+}
+/*
+<div class="section-three-card-titulo-button">
+        <h1>Free <span>/mo</span></h1>
+      </div> */
 
 .card-description {
   display: flex;
@@ -248,4 +283,101 @@ main {
 
 .card-description h3 {
   padding-bottom: 10px;
+}
+
+.card-button {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  padding: 500px 0px 0px 0px; /* top, right, bottom, left */
+}
+
+.card-button a {
+  color: var(--primary-color);
+  text-decoration: none;
+  border: 2px solid var(--primary-color);
+  border-radius: 20px;
+  display: flex;
+  align-items: flex-end;
+  padding: 10px 35px 10px 35px; /* top, right, bottom, left */
+
+}
+
+.card-button a:hover {
+  color: white;
+  background-color: var(--primary-color);
+  -webkit-box-shadow: 0px 15px 8px -2px rgba(245, 56, 56, 0.59);
+  -moz-box-shadow: 0px 15px 8px -2px rgba(245, 56, 56, 0.59);
+  box-shadow: 0px 15px 8px -2px rgba(245, 56, 56, 0.59);
+}
+
+footer {
+  padding: 20px 30px 20px 30px; /* top, right, bottom, left */
+  background-color: #f8f8f8;
+  height: 400px;
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.footer-pt-1 {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#marca-agua{
+  color: #AFB5C0;
+}
+
+.footer-pt-2 {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-pt-2 h2{
+  color: var(--title-color);
+  padding-bottom: 10px;
+}
+
+.footer-pt-3 {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-pt-3 h2{
+  color: var(--title-color);
+  padding-bottom: 10px;
+}
+
+.footer-pt-3 h3{
+  text-decoration: none;
+}
+
+.footer-pt-4 {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-pt-4 h2{
+  color: var(--title-color);
+  padding-bottom: 10px;
+}
+
+.footer h2 a,
+.footer h3 a {
+    text-decoration: none;
 }
